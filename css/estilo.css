@@ -281,7 +281,9 @@ h1{
     
         display: grid;
         grid-template-areas: 'V1 V2'
-                             'V3 V4';
+                             'V3 V4'
+                             'V5 V6'
+                             'V7 V8';
     }
     
     .VerdeFilho1{
@@ -310,6 +312,38 @@ h1{
 
     .VerdeFilho4{
         grid-area: V4;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+    
+    .VerdeFilho5{
+        grid-area: V5;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+
+    .VerdeFilho6{
+        grid-area: V6;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+
+    .VerdeFilho7{
+        grid-area: V7;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+
+    .VerdeFilho8{
+        grid-area: V8;
         background-color: green;
         color: green;
         height: 80px;
