@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .container{
+        display: grid;
+        grid-template-areas: 'divAzul'
+                            'divCinza'
+                            'divLaranja'
+                            'divVerde';
+    }
+
+    .azul{
+        grid-area: divAzul;
+
+        background-color: #307ce4;
+        color: #307ce4;
+        height: 50px;
+    }
+
+    .cinza{
+        grid-area: divCinza;
+        display: grid;
+        grid-template-areas: 'C1 C2 C3 C4 C5 C6';
+    }
+
+    .CinzaFilho1{
+        grid-area: C1;
+        background-color: gray;
+        height: 100px;
+        margin: 30px;
+    }
+
+    .CinzaFilho2{
+        grid-area: C2;
+        background-color: gray;
+        height: 100px;
+        margin: 30px;
+    }
+
+    .CinzaFilho3{
+        grid-area: C3;
+        background-color: gray;
+        height: 100px;
+        margin: 30px;
+    }
+
+    .CinzaFilho4{
+        grid-area: C4;
+        background-color: gray;
+        height: 100px;
+        margin: 30px;
+    }
+
+    .CinzaFilho5{
+        grid-area: C5;
+        background-color: gray;
+        height: 100px;
+        margin: 30px;
+    }
+
+    .CinzaFilho6{
+        grid-area: C6;
+        background-color: gray;
+        height: 100px;
+        margin: 30px;
+    }
+
+    .laranja{
+        grid-area: divLaranja;
+
+        background-color: orange;
+        color: orange;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 30px;
+    }
+
+    .verde{
+        grid-area: divVerde;
+
+        display: grid;
+        grid-template-areas: 'V1 V2 V3 V4'
+                            'V5 V6 V7 V8';
+    }
+
+    .VerdeFilho1{
+        grid-area: V1;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .VerdeFilho2{
+        grid-area: V2;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .VerdeFilho3{
+        grid-area: V3;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .VerdeFilho4{
+        grid-area: V4;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .VerdeFilho5{
+        grid-area: V5;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .VerdeFilho6{
+        grid-area: V6;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .VerdeFilho7{
+        grid-area: V7;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .VerdeFilho8{
+        grid-area: V8;
+        background-color: green;
+        color: green;
+        height: 200px;
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    h1{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-areas: 'divAzul'
+                             'divVerde';
+        grid-gap: 10px;
+    }
+    
+    .azul{
+        grid-area: divAzul;
+    
+        background-color: #307ce4;
+        color: #307ce4;
+        height: 50px;
+    }
+    
+    .verde{
+        grid-area: divVerde;
+    
+        display: grid;
+        grid-template-areas: 'V1'
+                             'V2'
+                             'V3';
+        grid-gap: 10px;
+    }
+    
+    .VerdeFilho1{
+        grid-area: V1;
+        background-color: green;
+        color: green;
+        height: 100px;
+    }
+    
+    .VerdeFilho2{
+        grid-area: V2;
+        background-color: green;
+        color: green;
+        height: 100px;
+    }
+    
+    .VerdeFilho3{
+        grid-area: V3;
+        background-color: green;
+        color: green;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:800px){
+
+    h1{
+        text-align: center;
+        font-size: 40;
+    }
+
+    .container{
+        display: grid;
+        grid-template-areas: 'divAzul'
+                             'divCinza'
+                             'divLaranja'
+                             'divVerde';
+        grid-gap: 10px;
+    }
+    
+    .azul{
+        grid-area: divAzul;
+    
+        background-color: #307ce4;
+        color: #307ce4;
+        height: 50px;
+    }
+
+    .cinza{
+        grid-area: divCinza;
+        display: grid;
+        grid-template-areas: 'C1 C2 C3';
+    }
+
+    .CinzaFilho1{
+        grid-area: C1;
+        background-color: gray;
+        height: 80px;
+        margin: 30px;
+    }
+
+    .CinzaFilho2{
+        grid-area: C2;
+        background-color: gray;
+        height: 80px;
+        margin: 30px;
+    }
+
+    .CinzaFilho3{
+        grid-area: C3;
+        background-color: gray;
+        height: 80px;
+        margin: 30px;
+    }
+
+    .laranja{
+        grid-area: divLaranja;
+
+        background-color: orange;
+        color: orange;
+        height: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    
+    .verde{
+        grid-area: divVerde;
+    
+        display: grid;
+        grid-template-areas: 'V1 V2'
+                             'V3 V4';
+    }
+    
+    .VerdeFilho1{
+        grid-area: V1;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+    
+    .VerdeFilho2{
+        grid-area: V2;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+    
+    .VerdeFilho3{
+        grid-area: V3;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+
+    .VerdeFilho4{
+        grid-area: V4;
+        background-color: green;
+        color: green;
+        height: 80px;
+        margin: 30px;
+    }
+}
