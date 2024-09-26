@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 'cabecalho'
+                         'itens1'
+                         'itens2';
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+
+    display: grid;
+    grid-template-areas: 'netshoes opcoes';
+    background-color: #2b77e5;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cabecalho a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.netshoes{
+    grid-area: netshoes;
+    padding: 15px;
+    margin-left: 5px;
+}
+
+.netshoes a{
+    text-transform: uppercase;
+}
+
+.opcoes{
+    grid-area: opcoes;
+}
+
+.opcoes li{
+    display: inline-block;
+    padding: 15px;
+}
+
+
+
+.itens1{
+    grid-area: itens1;
+
+    display: grid;
+    height: 200px;
+    width: 100%;
+    grid-template-areas: 'B F M V EF G';
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    border: 2px solid red;
+    margin-top: 30px;
+    margin-left: 35px;
+
+}
+
+#bicicleta{
+    grid-area: B;
+}
+
+.itens1 img{
+
+}
+
+#eletrônicos{
+    grid-area: F;
+}
+
+#cuidadosDiarios{
+    grid-area: M;
+}
+
+#vitaminas{
+    grid-area: V;
+}
+
+#Equipamentos{
+    grid-area: EF;
+}
+
+#games{
+    grid-area: G;
+}
+
+.itens2{
+    grid-area: itens2;
+}
