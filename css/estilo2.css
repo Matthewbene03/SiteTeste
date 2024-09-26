@@ -3,109 +3,200 @@
     padding: 0;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
 h1{
     text-align: center;
+    margin-top: 10px;
 }
+
+/*-------------------------------Container--------------------------------*/
 
 .container{
     display: grid;
-    grid-template-areas: 'cabecalho'
+
+    grid-template-areas: 'navMenu'
                          'itens1'
+                         'texto'
                          'itens2';
+    grid-gap: 15px;
 }
 
-.cabecalho{
-    grid-area: cabecalho;
+/*--------------------------------navMenu---------------------------------*/
+
+
+#navMenu{
+    grid-area: navMenu;
+    background-color: #2b77e5;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
 
     display: grid;
     grid-template-areas: 'netshoes opcoes';
-    background-color: #2b77e5;
     justify-content: space-between;
     align-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.cabecalho a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
 }
 
 ul{
     list-style-type: none;
 }
 
-.netshoes{
-    grid-area: netshoes;
-    padding: 15px;
-    margin-left: 5px;
-}
-
-.netshoes a{
-    text-transform: uppercase;
-}
-
-.opcoes{
-    grid-area: opcoes;
-}
-
-.opcoes li{
+#navMenu li{
     display: inline-block;
     padding: 15px;
 }
 
+li a{
+    color: white;
+    text-decoration: none;
+}
 
+#netshoes{
+    grid-area: netshoes;
+    margin-left: 25px;
+}
 
-.itens1{
+#netshoes a{
+    text-transform: uppercase;
+}
+
+#opcoes{
+    grid-area: opcoes;
+    margin-right: 5px;
+}
+
+/*-------------------------------itens1-----------------------------------*/
+
+#itens1{
     grid-area: itens1;
+    max-height: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+
 
     display: grid;
-    height: 200px;
-    width: 100%;
-    grid-template-areas: 'B F M V EF G';
+    grid-template-areas: 'P1 P2 P3 P4 P5 P6';
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    justify-content: space-between;
+    align-content: center;
     grid-gap: 10px;
-    border: 2px solid red;
-    margin-top: 30px;
-    margin-left: 35px;
-
 }
 
-#bicicleta{
-    grid-area: B;
+.produto1{
+    grid-area: P1;
+    height: 150px;
+    text-align: center;
 }
 
-.itens1 img{
-
+#itens1 img{
+    border: 4px solid gray;
+    border-radius: 100%;
+    background-color: rgb(219, 211, 211);
 }
 
-#eletrônicos{
-    grid-area: F;
+.produto2{
+    grid-area: P2;
+    height: 150px;
+    text-align: center;
 }
 
-#cuidadosDiarios{
-    grid-area: M;
+.produto3{
+    grid-area: P3;
+    height: 150px;
+    text-align: center;
 }
 
-#vitaminas{
-    grid-area: V;
+.produto4{
+    grid-area: P4;
+    height: 150px;
+    text-align: center;
 }
 
-#Equipamentos{
-    grid-area: EF;
+.produto5{
+    grid-area: P5;
+    height: 150px;
+    text-align: center;
 }
 
-#games{
-    grid-area: G;
+.produto6{
+    grid-area: P6;
+    height: 150px;
+    text-align: center;
 }
 
-.itens2{
+/*---------------------------------texto----------------------------------*/
+
+#texto{
+    grid-area: texto;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#texto h2{
+    text-align: left;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*--------------------------------itens2----------------------------------*/
+
+#itens2{
     grid-area: itens2;
+    max-height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: grid;
+    grid-template-areas: 'P1 P2 P3 P4'
+                         'P5 P6 P7 P8';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 2px solid red;
+    grid-gap: 10px;
 }
+
+.p1{
+    grid-area: P1;
+    background-color: green;
+    height: 245px;
+}
+
+.p2{
+    grid-area: P2;
+    background-color: green;
+    height: 245px;
+}
+.p3{
+    grid-area: P3;
+    background-color: green;
+    height: 245px;
+}
+.p4{
+    grid-area: P4;
+    background-color: green;
+    height: 245px;
+}
+.p5{
+    grid-area: P5;
+    background-color: green;
+    height: 245px;
+}
+.p6{
+    grid-area: P6;
+    background-color: green;
+    height: 245px;
+}
+.p7{
+    grid-area: P7;
+    background-color: green;
+    height: 245px;
+}
+.p8{
+    grid-area: P8;
+    background-color: green;
+    height: 245px;
+}
+/*------------------------------------------------------------------------*/
