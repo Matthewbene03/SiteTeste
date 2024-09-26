@@ -1,239 +1,647 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 h1{
     text-align: center;
     margin-top: 10px;
 }
 
-/*-------------------------------Container--------------------------------*/
+@media screen and (min-width: 800px) {/*Computador*/
 
-.container{
-    display: grid;
+    /*-------------------------------Container--------------------------------*/
 
-    grid-template-areas: 'navMenu'
-                         'itens1'
-                         'texto'
-                         'itens2';
-    grid-gap: 15px;
-}
+    .container{
+        display: grid;
 
-/*--------------------------------navMenu---------------------------------*/
+        grid-template-areas: 'navMenu'
+                            'itens1'
+                            'texto'
+                            'itens2';
+        grid-gap: 15px;
+    }
 
-
-#navMenu{
-    grid-area: navMenu;
-    background-color: #2b77e5;
-    height: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
-
-    display: grid;
-    grid-template-areas: 'netshoes opcoes';
-    justify-content: space-between;
-    align-content: center;
-}
-
-ul{
-    list-style-type: none;
-}
-
-#navMenu li{
-    display: inline-block;
-    padding: 15px;
-}
-
-li a{
-    color: white;
-    text-decoration: none;
-}
-
-#netshoes{
-    grid-area: netshoes;
-    margin-left: 25px;
-}
-
-#netshoes a{
-    text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    font-style: italic;
-}
-
-#opcoes{
-    grid-area: opcoes;
-    margin-right: 5px;
-    margin-top: 3px;
-}
-
-#opcoes a{
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-/*-------------------------------itens1-----------------------------------*/
-
-#itens1{
-    grid-area: itens1;
-    max-height: 150px;
-    margin-left: 400px;
-    margin-right: 400px;
+    /*--------------------------------navMenu---------------------------------*/
 
 
-    display: grid;
-    grid-template-areas: 'P1 P2 P3 P4 P5 P6';
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: space-between;
-    align-content: center;
-    grid-gap: 10px;
-}
+    #navMenu{
+        grid-area: navMenu;
+        background-color: #2b77e5;
+        height: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
 
-.produto1{
-    grid-area: P1;
-    height: 150px;
-    text-align: center;
-}
+        display: grid;
+        grid-template-areas: 'netshoes opcoes';
+        justify-content: space-between;
+        align-content: center;
+    }
 
-#itens1 img{
-    border: 4px solid gray;
-    border-radius: 100%;
-    background-color: rgb(219, 211, 211);
-}
+    ul{
+        list-style-type: none;
+    }
 
-.produto2{
-    grid-area: P2;
-    height: 150px;
-    text-align: center;
-}
+    #navMenu li{
+        display: inline-block;
+        padding: 15px;
+    }
 
-.produto3{
-    grid-area: P3;
-    height: 150px;
-    text-align: center;
-}
+    li a{
+        color: white;
+        text-decoration: none;
+    }
 
-.produto4{
-    grid-area: P4;
-    height: 150px;
-    text-align: center;
-}
+    #netshoes{
+        grid-area: netshoes;
+        margin-left: 25px;
+    }
 
-.produto5{
-    grid-area: P5;
-    height: 150px;
-    text-align: center;
-}
+    #netshoes a{
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        font-style: italic;
+    }
 
-.produto6{
-    grid-area: P6;
-    height: 150px;
-    text-align: center;
-}
+    #opcoes{
+        grid-area: opcoes;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
 
-/*---------------------------------texto----------------------------------*/
+    #opcoes a{
+        font-size: 20px;
+        padding: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
 
-#texto{
-    grid-area: texto;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 400px;
-    margin-right: 400px;
-}
+    /*-------------------------------itens1-----------------------------------*/
 
-#texto h2{
-    text-align: left;
-    font-size: 13px;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+    #itens1{
+        grid-area: itens1;
+        max-height: 150px;
+        margin-left: 100px;
+        margin-right: 100px;
 
-/*--------------------------------itens2----------------------------------*/
 
-#itens2{
-    grid-area: itens2;
-    max-height: 510px;
-    margin-left: 400px;
-    margin-right: 400px;
+        display: grid;
+        grid-template-areas: 'P1 P2 P3 P4 P5 P6';
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-between;
+        align-content: center;
+        grid-gap: 10px;
+    }
 
-    display: grid;
-    grid-template-areas: 'P1 P2 P3 P4'
-                         'P5 P6 P7 P8';
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    .produto1{
+        grid-area: P1;
+        height: 150px;
+        text-align: center;
+    }
 
-    grid-gap: 10px;
-}
+    #itens1 img{
+        border: 4px solid gray;
+        border-radius: 100%;
+        background-color: rgb(219, 211, 211);
+    }
 
-.p1{
-    grid-area: P1;
-    height: 245px;
-    text-align: center;
+    .produto2{
+        grid-area: P2;
+        height: 150px;
+        text-align: center;
+    }
 
-}
+    .produto3{
+        grid-area: P3;
+        height: 150px;
+        text-align: center;
+    }
 
-.p2{
-    grid-area: P2;
-    text-align: center;
-    height: 245px;
+    .produto4{
+        grid-area: P4;
+        height: 150px;
+        text-align: center;
+    }
 
-}
-.p3{
-    grid-area: P3;
-    text-align: center;
-    height: 245px;
+    .produto5{
+        grid-area: P5;
+        height: 150px;
+        text-align: center;
+    }
 
-}
-.p4{
-    grid-area: P4;
-    text-align: center;
-    height: 245px;
+    .produto6{
+        grid-area: P6;
+        height: 150px;
+        text-align: center;
+    }
 
-}
-.p5{
-    grid-area: P5;
-    text-align: center;
-    height: 245px;
+    /*---------------------------------texto----------------------------------*/
 
-}
-.p6{
-    grid-area: P6;
-    text-align: center;
-    height: 245px;
+    #texto{
+        grid-area: texto;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 
-}
-.p7{
-    grid-area: P7;
-    text-align: center;
-    height: 245px;
+    #texto h2{
+        text-align: left;
+        font-size: 13px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 
-}
-.p8{
-    grid-area: P8;
-    text-align: center;
-    height: 245px;
+    /*--------------------------------itens2----------------------------------*/
 
-}
+    #itens2{
+        grid-area: itens2;
+        max-height: 510px;
+        margin-left: 100px;
+        margin-right: 100px;
 
-.preço{
-    color: #7991b7;
-    font-size: 15px;
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-family: "Comic Neue", cursive;;
-}
+        display: grid;
+        grid-template-areas: 'P1 P2 P3 P4'
+                            'P5 P6 P7 P8';
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
-.nomeProduto{
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 10px;
+        grid-gap: 10px;
+    }
+
+    .p1{
+        grid-area: P1;
+        height: 245px;
+        text-align: center;
+
+    }
+
+    .p2{
+        grid-area: P2;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p3{
+        grid-area: P3;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p4{
+        grid-area: P4;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p5{
+        grid-area: P5;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p6{
+        grid-area: P6;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p7{
+        grid-area: P7;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p8{
+        grid-area: P8;
+        text-align: center;
+        height: 245px;
+
+    }
+
+    .preço{
+        color: #7991b7;
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-family: "Comic Neue", cursive;;
+    }
+
+    .nomeProduto{
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }
 /*------------------------------------------------------------------------*/
+
+@media screen and (max-width: 350px){ /*Celular*/
+
+    h1, hr{
+        display: none;
+    }
+
+    .container{
+        display: grid;
+
+        grid-template-areas: 'navMenu'
+                             'itens1';
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 0px;
+    }
+
+    #navMenu{
+        grid-area: navMenu;
+        background-color: #2b77e5;
+        height: 50px;
+        margin-bottom: 0px;
+
+        display: grid;
+        grid-template-areas: 'netshoes';
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    #navMenu li{
+        display: inline-block;
+    }
+
+    li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #netshoes{
+        grid-area: netshoes;
+        grid-row: 1/2;
+    }
+
+    #netshoes a{
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    .opcoes{
+        display: none;
+    }
+
+    #itens1, #texto{
+        display: none;
+    }
+
+    /*-------------------------------itens2-----------------------------------*/
+
+    #itens2{
+        grid-area: itens1;
+
+        display: grid;
+        grid-template-areas: 'P1'
+                             'P2'
+                             'P3'
+                             'P4'
+                             'P5'
+                             'P6'
+                             'P7' 
+                             'P8';
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        border: 2px solid red;
+        grid-gap: 10px;
+    }
+
+    #itens2 img{
+        height: 70px;
+    }
+
+    .p1{
+        grid-area: P1;
+        height: 100px;
+        text-align: center;
+    }
+
+    .p2{
+        grid-area: P2;
+        text-align: center;
+        height: 100px;
+
+    }
+    .p3{
+        grid-area: P3;
+        text-align: center;
+        height: 100px;
+
+    }
+    .p4{
+        grid-area: P4;
+        text-align: center;
+        height: 100px;
+
+    }
+    .p5{
+        grid-area: P5;
+        text-align: center;
+        height: 100px;
+
+    }
+    .p6{
+        grid-area: P6;
+        text-align: center;
+        height: 100px;
+
+    }
+    .p7{
+        grid-area: P7;
+        text-align: center;
+        height: 100px;
+
+    }
+    .p8{
+        grid-area: P8;
+        text-align: center;
+        height: 100px;
+    }
+
+    .preço{
+        color: #7991b7;
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-family: "Comic Neue", cursive;;
+    }
+
+    .nomeProduto{
+        font-size: 20px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:800px) {/*Tablet*/
+
+    .container{
+        display: grid;
+
+        grid-template-areas: 'navMenu'
+                            'itens1'
+                            'texto'
+                            'itens2';
+        grid-gap: 0px;
+    }
+
+    /*--------------------------------navMenu---------------------------------*/
+
+
+    #navMenu{
+        grid-area: navMenu;
+        background-color: #2b77e5;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+
+        display: grid;
+        grid-template-areas: 'netshoes opcoes';
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    #navMenu li{
+        display: inline-block;
+        padding: 15px;
+    }
+
+    li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #netshoes{
+        grid-area: netshoes;
+        margin-left: 15px;
+    }
+
+    #netshoes a{
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    #opcoes{
+        grid-area: opcoes;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+
+    #opcoes a{
+        font-size: 15px;
+        padding: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+
+    /*-------------------------------itens1-----------------------------------*/
+
+    #itens1{
+        grid-area: itens1;
+        max-height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+        display: grid;
+        grid-template-areas: 'P1 P2 P3';
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: space-between;
+        align-content: center;
+        grid-gap: 10px;
+    }
+
+    #itens1 img{
+        border: 4px solid gray;
+        border-radius: 100%;
+        background-color: rgb(219, 211, 211);
+    }
+
+    #itens1{
+        grid-area: itens1;
+        max-height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+        display: grid;
+        grid-template-areas: 'P1 P2 P3';
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: space-between;
+        align-content: center;
+        grid-gap: 10px;
+        border: 2px solid red;
+    }
+
+    #itens1 img{
+        border: 4px solid gray;
+        border-radius: 100%;
+        background-color: rgb(219, 211, 211);
+    }
+
+    .produto1{
+        grid-area: P1;
+        height: 100px;
+        text-align: center;
+        border: 2px solid red;
+    }
+
+    .produto1 img{
+        height: 90px !important;
+    }
+
+    .produto2{
+        grid-area: P2;
+        height: 100px;
+        text-align: center;
+    }
+
+    .produto2 img{
+        height: 90px !important;
+    }
+
+    .produto3{
+        grid-area: P3;
+        height: 100px;
+        text-align: center;
+    }
+
+    .produto3 img{
+        height: 90px !important;
+    }
+
+    .produto4{
+        display: none;
+    }
+
+    .produto5{
+        display: none;
+    }
+
+    .produto6{
+        display: none;
+    }
+
+    /*---------------------------------texto----------------------------------*/
+
+    #texto{
+        grid-area: texto;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #texto h2{
+        text-align: left;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /*--------------------------------itens2----------------------------------*/
+
+    #itens2{
+        grid-area: itens2;
+        margin-left: 80px;
+        margin-right: 80px;
+
+        display: grid;
+        grid-template-areas: 'P1 P2'
+                             'P3 P4'
+                             'P5 P6'
+                             'P7 P8';
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 2px solid red;
+        grid-gap: 10px;
+    }
+
+    .p1{
+        grid-area: P1;
+        height: 245px;
+        text-align: center;
+
+    }
+
+    .p2{
+        grid-area: P2;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p3{
+        grid-area: P3;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p4{
+        grid-area: P4;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p5{
+        grid-area: P5;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p6{
+        grid-area: P6;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p7{
+        grid-area: P7;
+        text-align: center;
+        height: 245px;
+
+    }
+    .p8{
+        grid-area: P8;
+        text-align: center;
+        height: 245px;
+    }
+
+    .preço{
+        color: #7991b7;
+        font-size: 20px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-family: "Comic Neue", cursive;;
+    }
+
+    .nomeProduto{
+        font-size: 20px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
