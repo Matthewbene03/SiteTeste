@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -27,8 +29,9 @@ h1{
     grid-area: navMenu;
     background-color: #2b77e5;
     height: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 
     display: grid;
     grid-template-areas: 'netshoes opcoes';
@@ -57,11 +60,22 @@ li a{
 
 #netshoes a{
     text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-style: italic;
 }
 
 #opcoes{
     grid-area: opcoes;
     margin-right: 5px;
+    margin-top: 3px;
+}
+
+#opcoes a{
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 /*-------------------------------itens1-----------------------------------*/
@@ -69,8 +83,8 @@ li a{
 #itens1{
     grid-area: itens1;
     max-height: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
 
 
     display: grid;
@@ -129,8 +143,8 @@ li a{
     grid-area: texto;
     height: 40px;
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
 }
 
 #texto h2{
@@ -145,58 +159,81 @@ li a{
 
 #itens2{
     grid-area: itens2;
-    max-height: 500px;
-    margin-left: 100px;
-    margin-right: 100px;
+    max-height: 510px;
+    margin-left: 400px;
+    margin-right: 400px;
 
     display: grid;
     grid-template-areas: 'P1 P2 P3 P4'
                          'P5 P6 P7 P8';
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    border: 2px solid red;
+
     grid-gap: 10px;
 }
 
 .p1{
     grid-area: P1;
-    background-color: green;
     height: 245px;
+    text-align: center;
+
 }
 
 .p2{
     grid-area: P2;
-    background-color: green;
+    text-align: center;
     height: 245px;
+
 }
 .p3{
     grid-area: P3;
-    background-color: green;
+    text-align: center;
     height: 245px;
+
 }
 .p4{
     grid-area: P4;
-    background-color: green;
+    text-align: center;
     height: 245px;
+
 }
 .p5{
     grid-area: P5;
-    background-color: green;
+    text-align: center;
     height: 245px;
+
 }
 .p6{
     grid-area: P6;
-    background-color: green;
+    text-align: center;
     height: 245px;
+
 }
 .p7{
     grid-area: P7;
-    background-color: green;
+    text-align: center;
     height: 245px;
+
 }
 .p8{
     grid-area: P8;
-    background-color: green;
+    text-align: center;
     height: 245px;
+
+}
+
+.preço{
+    color: #7991b7;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Comic Neue", cursive;;
+}
+
+.nomeProduto{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 /*------------------------------------------------------------------------*/
